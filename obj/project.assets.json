@@ -1015,11 +1015,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Projetos Programação\\C#\\Lnkd\\HPlusSport\\HPlusSport.API\\HPlusSport.API.csproj",
+      "projectUniqueName": "G:\\Projetos Programação\\C#\\Lnkd\\Nova pasta (2)\\Simple-API-CSharp\\HPlusSport.API.csproj",
       "projectName": "HPlusSport.API",
-      "projectPath": "G:\\Projetos Programação\\C#\\Lnkd\\HPlusSport\\HPlusSport.API\\HPlusSport.API.csproj",
+      "projectPath": "G:\\Projetos Programação\\C#\\Lnkd\\Nova pasta (2)\\Simple-API-CSharp\\HPlusSport.API.csproj",
       "packagesPath": "C:\\Users\\Leonardo Silva\\.nuget\\packages\\",
-      "outputPath": "G:\\Projetos Programação\\C#\\Lnkd\\HPlusSport\\HPlusSport.API\\obj\\",
+      "outputPath": "G:\\Projetos Programação\\C#\\Lnkd\\Nova pasta (2)\\Simple-API-CSharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Leonardo Silva\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -22,10 +22,16 @@ namespace HPlusSport.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetAllProducts() // O IEnumerable retorna o resultado do context acima
+        public async Task<ActionResult<IEnumerable<Product>>> GetAllProducts([FromQuery]QueryParameters queryParameters) 
         {
-            var products = await _context.Products.ToListAsync(); ;
-            return Ok(products); // O resultado vai voltar em formato de array por causa deste método. (Neste caso converte para JSON)
+  
+            IQueryable<Product> products = _context.Products;
+
+            products = products
+            .Skip(queryParameters.Size * (queryParameters.Page - 1)) 
+            .Take(queryParameters.Size);
+        
+            return Ok(await products.ToListAsync());
         }
 
         [HttpGet, Route("{id}")]

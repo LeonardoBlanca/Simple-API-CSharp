@@ -33,3 +33,39 @@ G:\Projetos Programação\C#\Lnkd\HPlusSport\HPlusSport.API\obj\Debug\net8.0\ref
 G:\Projetos Programação\C#\Lnkd\HPlusSport\HPlusSport.API\obj\Debug\net8.0\HPlusSport.API.pdb
 G:\Projetos Programação\C#\Lnkd\HPlusSport\HPlusSport.API\obj\Debug\net8.0\HPlusSport.API.genruntimeconfig.cache
 G:\Projetos Programação\C#\Lnkd\HPlusSport\HPlusSport.API\obj\Debug\net8.0\ref\HPlusSport.API.dll
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\appsettings.Development.json
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\appsettings.json
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\HPlusSport.API.exe
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\HPlusSport.API.deps.json
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\HPlusSport.API.runtimeconfig.json
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\HPlusSport.API.dll
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\HPlusSport.API.pdb
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\Microsoft.OpenApi.dll
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\HPlusSport.API.csproj.AssemblyReference.cache
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\HPlusSport.API.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\HPlusSport.API.AssemblyInfoInputs.cache
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\HPlusSport.API.AssemblyInfo.cs
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\HPlusSport.API.csproj.CoreCompileInputs.cache
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\HPlusSport.API.MvcApplicationPartsAssemblyInfo.cs
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\HPlusSport.API.MvcApplicationPartsAssemblyInfo.cache
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\HPlusSport.API.sourcelink.json
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\staticwebassets.build.json
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\staticwebassets.development.json
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\staticwebassets\msbuild.HPlusSport.API.Microsoft.AspNetCore.StaticWebAssets.props
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\staticwebassets\msbuild.build.HPlusSport.API.props
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.HPlusSport.API.props
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.HPlusSport.API.props
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\staticwebassets.pack.json
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\scopedcss\bundle\HPlusSport.API.styles.css
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\HPlusSpo.33A852E7.Up2Date
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\HPlusSport.API.dll
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\refint\HPlusSport.API.dll
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\HPlusSport.API.pdb
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\HPlusSport.API.genruntimeconfig.cache
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\ref\HPlusSport.API.dll

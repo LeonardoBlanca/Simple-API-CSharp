@@ -22,9 +22,9 @@ namespace HPlusSport.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetAllProducts([FromQuery]ProductQueryParameters queryParameters) 
+        public async Task<ActionResult<IEnumerable<Product>>> GetAllProducts([FromQuery] ProductQueryParameters queryParameters)
         {
-  
+
             IQueryable<Product> products = _context.Products;
 
             products = products
@@ -39,13 +39,25 @@ namespace HPlusSport.API.Controllers
                 );
             }
 
-            if(queryParameters.MaxPrice != null)
+            if (queryParameters.MaxPrice != null)
             {
                 products = products.Where(
                     p => p.Price <= queryParameters.MaxPrice.Value
                 );
             }
-        
+            if (!string.IsNullOrEmpty(queryParameters.SKU))
+            {
+                products = products.Where(
+                    p => p.Sku == queryParameters.SKU);
+            }
+
+            if (!string.IsNullOrEmpty(queryParameters.Name))
+            {
+                products = products.Where(
+                    p => p.Name.ToLower().Contains(
+                        queryParameters.Name.ToLower()));
+            }
+
             return Ok(await products.ToListAsync());
         }
 
@@ -80,7 +92,8 @@ namespace HPlusSport.API.Controllers
         [HttpPost]
         public async Task<ActionResult> PostProduct(Product product)
         {
-            if (!ModelState.IsValid){
+            if (!ModelState.IsValid)
+            {
                 return BadRequest();
             }
             _context.Products.Add(product);
@@ -93,7 +106,7 @@ namespace HPlusSport.API.Controllers
         public async Task<ActionResult> PutProduct(int id, Product product)
         {
             // Verificando se é o mesmo item
-            if (id != product.Id) 
+            if (id != product.Id)
             {
                 return BadRequest();
             }
@@ -128,7 +141,7 @@ namespace HPlusSport.API.Controllers
 
             _context.Products.Remove(product);
             await _context.SaveChangesAsync();
-            
+
             return Ok(product);
         }
 
@@ -136,26 +149,26 @@ namespace HPlusSport.API.Controllers
         [HttpDelete("Delete")]
         public async Task<ActionResult> DeleteManyProducts(int[] ids)
         {
-           var products = new List<Product>();
-           foreach (var id in ids)
-           {
-            var product = await _context.Products.FindAsync(id);
-            
-            // Tratamento para quando não houver o ID
-            if (product == null)
+            var products = new List<Product>();
+            foreach (var id in ids)
             {
-                return NotFound();
+                var product = await _context.Products.FindAsync(id);
+
+                // Tratamento para quando não houver o ID
+                if (product == null)
+                {
+                    return NotFound();
+                }
+
+                // Caso o id exista
+                products.Add(product);
             }
 
-            // Caso o id exista
-            products.Add(product);
-           }
+            // Removendo o Range dos IDs
+            _context.RemoveRange(products);
+            await _context.SaveChangesAsync();
 
-           // Removendo o Range dos IDs
-           _context.RemoveRange(products);
-           await _context.SaveChangesAsync();
-
-           return Ok(products);
+            return Ok(products);
         }
 
     }

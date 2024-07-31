@@ -27,9 +27,6 @@ namespace HPlusSport.API.Controllers
 
             IQueryable<Product> products = _context.Products;
 
-            products = products
-            .Skip(queryParameters.Size * (queryParameters.Page - 1))
-            .Take(queryParameters.Size);
 
             // Remover os que não se encaixam nos limites do Min e Max
             if (queryParameters.MinPrice != null)
@@ -57,6 +54,24 @@ namespace HPlusSport.API.Controllers
                     p => p.Name.ToLower().Contains(
                         queryParameters.Name.ToLower()));
             }
+
+            // Iniciando o Sort
+            // Verificando se tem algo para ordenarmos
+            if (!string.IsNullOrEmpty(queryParameters.SortBy))
+            {
+                if(typeof(Product).GetProperty(queryParameters.SortBy) != null)
+                {
+                    // Aqui o método de extensão pode brilhar
+                    products = products.OrderByCustom(
+                        queryParameters.SortBy,
+                        queryParameters.SortOrder
+                    );
+                }
+            }
+
+            products = products
+            .Skip(queryParameters.Size * (queryParameters.Page - 1))
+            .Take(queryParameters.Size);
 
             return Ok(await products.ToListAsync());
         }

@@ -2,6 +2,7 @@
 
 namespace HPlusSport.API;
 
+
 public class QueryParameters
 {
     const int _maxSize = 100;   

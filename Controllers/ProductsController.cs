@@ -7,7 +7,8 @@ using Microsoft.EntityFrameworkCore;
 namespace HPlusSport.API.Controllers
 {
     [ApiVersion("1.0")]
-    [Route("api/v{version:apiVersion}/products")]
+    // [Route("api/v{version:apiVersion}/products")]
+    [Route("api/products")]
     [ApiController]
     public class Productsv1Controller : ControllerBase
     {
@@ -203,7 +204,8 @@ namespace HPlusSport.API.Controllers
 // Second Version which returns only where IsAvaliable is true
 
     [ApiVersion("2.0")]
-    [Route("api/v{version:apiVersion}/products")]
+    // [Route("api/v{version:apiVersion}/products")]
+    [Route("api/products")]
     [ApiController]
     public class Productsv2Controller : ControllerBase
     {

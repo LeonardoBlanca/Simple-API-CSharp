@@ -47,9 +47,53 @@ using (var scope = app.Services.CreateScope())
 }
 
 // Iniciando Minimal API (Uso do MapGet)
-app.MapGet("/products", async (ShopContext _context) =>
+app.MapGet("/products", async (ShopContext _context, [AsParameters] ProductQueryParameters queryParameters) =>
 {
-    return Results.Ok(await _context.Products.ToListAsync());
+    IQueryable<Product> products = _context.Products;
+
+
+            // Remover os que não se encaixam nos limites do Min e Max
+            if (queryParameters.MinPrice != null)
+            {
+                products = products.Where(
+                    p => p.Price >= queryParameters.MinPrice.Value
+                );
+            }
+
+            if (queryParameters.MaxPrice != null)
+            {
+                products = products.Where(
+                    p => p.Price <= queryParameters.MaxPrice.Value
+                );
+            }
+            if (!string.IsNullOrEmpty(queryParameters.SKU))
+            {
+                products = products.Where(
+                    p => p.Sku == queryParameters.SKU);
+            }
+
+            if (!string.IsNullOrEmpty(queryParameters.Name))
+            {
+                products = products.Where(
+                    p => p.Name.ToLower().Contains(
+                        queryParameters.Name.ToLower()));
+            }
+
+            // Iniciando o Sort
+            // Verificando se tem algo para ordenarmos
+            if (!string.IsNullOrEmpty(queryParameters.SortBy) && 
+                typeof(Product).GetProperty(queryParameters.SortBy) != null)
+            {
+                products = queryParameters.SortOrder.ToLower() == "desc"
+                ? products.OrderByDescending(p => p.GetType().GetProperty(queryParameters.SortBy)!.GetValue(p, null))
+                : products.OrderBy(p => p.GetType().GetProperty(queryParameters.SortBy)!.GetValue(p, null));
+            }
+
+            products = products
+            .Skip(queryParameters.Size * (queryParameters.Page - 1))
+            .Take(queryParameters.Size);
+
+    return Results.Ok(await products.ToArrayAsync());
 });
 
 app.MapGet("/products/{id}", async (int id, ShopContext _context) =>

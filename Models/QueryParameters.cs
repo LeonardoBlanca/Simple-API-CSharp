@@ -18,14 +18,12 @@ public class QueryParameters
     }
 
     public string SortBy { get; set; } = "Id";
-    public string _sortOrder { get; set; } = "asc";
+    private string _sortOrder { get; set; } = "asc";
     public string SortOrder
     {
         get { return _sortOrder;}
-    // Usar um allow list no set, porque só tem 2 valores válidos (asc e desc)
-    // Vamos checar se tem um do dois valores
+    
         set {
-                // Somente nestes 2 casos eu vou definir o valor de set
                 if(value == "asc" || value == "desc")
                 {
                     _sortOrder = value;

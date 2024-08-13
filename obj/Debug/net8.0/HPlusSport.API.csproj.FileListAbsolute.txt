@@ -69,3 +69,7 @@ G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net
 G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\HPlusSport.API.pdb
 G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\HPlusSport.API.genruntimeconfig.cache
 G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\obj\Debug\net8.0\ref\HPlusSport.API.dll
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\Asp.Versioning.Abstractions.dll
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\Asp.Versioning.Http.dll
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\Asp.Versioning.Mvc.dll
+G:\Projetos Programação\C#\Lnkd\Nova pasta (2)\Simple-API-CSharp\bin\Debug\net8.0\Asp.Versioning.Mvc.ApiExplorer.dll

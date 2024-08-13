@@ -1,6 +1,8 @@
 using HPlusSport.API.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Asp.Versioning;
+using Microsoft.Extensions.Options;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,6 +25,19 @@ builder.Services.AddDbContext<ShopContext>(options =>
 {
     options.UseInMemoryDatabase("Shop"); // Nome arbitrário para o banco de dados, vai chamar de Shop por enquanto.
 });
+
+
+// Versioning API
+builder.Services.AddApiVersioning(options => {
+    options.DefaultApiVersion = new ApiVersion(1, 0);
+    options.AssumeDefaultVersionWhenUnspecified = true;
+    options.ReportApiVersions = true;
+})
+    .AddApiExplorer(options =>
+    {
+        options.GroupNameFormat = "'v'vvv";
+        options.SubstituteApiVersionInUrl = true;
+    });
 
 var app = builder.Build();
 

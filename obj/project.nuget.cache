@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "LFUGthlfuZw=",
+  "dgSpecHash": "dRsSlFfqNZg=",
   "success": true,
   "projectFilePath": "G:\\Projetos Programação\\C#\\Lnkd\\Nova pasta (2)\\Simple-API-CSharp\\HPlusSport.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Leonardo Silva\\.nuget\\packages\\asp.versioning.abstractions\\8.1.0\\asp.versioning.abstractions.8.1.0.nupkg.sha512",
+    "C:\\Users\\Leonardo Silva\\.nuget\\packages\\asp.versioning.http\\8.1.0\\asp.versioning.http.8.1.0.nupkg.sha512",
+    "C:\\Users\\Leonardo Silva\\.nuget\\packages\\asp.versioning.mvc\\8.1.0\\asp.versioning.mvc.8.1.0.nupkg.sha512",
+    "C:\\Users\\Leonardo Silva\\.nuget\\packages\\asp.versioning.mvc.apiexplorer\\8.1.0\\asp.versioning.mvc.apiexplorer.8.1.0.nupkg.sha512",
     "C:\\Users\\Leonardo Silva\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.4\\microsoft.entityframeworkcore.8.0.4.nupkg.sha512",
     "C:\\Users\\Leonardo Silva\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.4\\microsoft.entityframeworkcore.abstractions.8.0.4.nupkg.sha512",
     "C:\\Users\\Leonardo Silva\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.4\\microsoft.entityframeworkcore.analyzers.8.0.4.nupkg.sha512",
